@@ -1,0 +1,33 @@
+@model ProductViewModel
+
+<div class="p-4 m-2 mt-4 bg-body-tertiary rounded-3 border">
+    <h4>@Model.category.CategoryName</h4>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Products</th>
+                <th scope="col">Unit price</th>
+                <th scope="col">Units in stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.products.Count() == 0)
+            {
+                <p>ojete!</p>
+            }
+            else{
+                @foreach (Product product in Model.products)
+                {
+                    <tr>
+                        <th scope="row">@product.ProductId</th>
+                        <td>@product.ProductName</td>
+                        <td>@product.UnitPrice.ToString("G29") $</td>
+                        <td>@product.UnitsInStock</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
