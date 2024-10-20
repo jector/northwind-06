@@ -16,6 +16,15 @@ a {
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        }
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -64,4 +73,17 @@ body {
     font-size: .7em;
     opacity: .75;
     display: block;
+}
+.form-control::placeholder {
+    color: #a9a9a9;
+}
+.customerDetails, .customerDetailsContact{
+    font-family: "Montserrat", sans-serif;
+    opacity: .75;
+    display: block;
+}
+.customerDetailsContact span{
+    font-size: .7em;
+    min-width: 5ch;
+    display: inline-block;
 }

@@ -8,7 +8,8 @@
         {
             <li class="list-group-item list-group-item-action list-group-item-light">
                 <br>
-                <h5 class="text-uppercase font-weight-bold">@d.Title</h5><p>@d.Description</p>
+                <h5 class="text-uppercase font-weight-bold">@d.Title</h5>
+                <p>@d.Description</p>
                 <small class="text-secondary discountDetails">@((d.DiscountPercent * 100).ToString("G29"))% on @d.Product.ProductName <br>Discount fininshes @d.EndTime.ToString("d") at @d.EndTime.ToString("t")
                 </small>
             </li>
